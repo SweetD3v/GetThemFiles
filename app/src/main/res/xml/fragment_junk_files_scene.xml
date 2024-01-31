@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@id/end"
+        motion:constraintSetStart="@+id/start"
+        motion:duration="1000"
+        motion:motionInterpolator="@string/material_motion_easing_linear">
+
+        <OnSwipe
+            motion:autoCompleteMode="spring"
+            motion:dragDirection="dragUp"
+            motion:dragScale="1"
+            motion:moveWhenScrollAtTop="true"
+            motion:onTouchUp="autoComplete"
+
+            motion:springDamping="60"
+            motion:springMass="1.5"
+            motion:springStiffness="300"
+            motion:springStopThreshold="0"
+            motion:touchAnchorId="@id/rvJunkFiles"
+            motion:touchAnchorSide="top" />
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start" />
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintVertical_bias="0.0" />
+
+        <Constraint
+            android:id="@+id/clMain"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:alpha="0"
+            android:background="#FF6A6A"
+            motion:layout_constraintBottom_toTopOf="@id/divider"
+            motion:layout_constraintTop_toTopOf="parent" />
+
+        <Constraint
+            android:id="@+id/rvJunkFiles"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/bg_default"
+            motion:layout_constraintBottom_toTopOf="@id/btnClean"
+            motion:layout_constraintTop_toBottomOf="@id/divider" />
+    </ConstraintSet>
+</MotionScene>

@@ -1,0 +1,123 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.devtools.ksp'
+    id 'org.jetbrains.kotlin.android'
+    id 'androidx.navigation.safeargs.kotlin'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'com.filerecover.photorecovery.allrecover.restore'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.filerecover.photorecovery.allrecover.restore"
+        minSdk 24
+        targetSdk 34
+        versionCode 11
+        versionName "1.1"
+        multiDexEnabled true
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    bundle {
+        language {
+            enableSplit = false
+        }
+    }
+
+    buildTypes {
+        debug {
+            resValue "string", "onesignal_app_id", "620744f5-6a4f-4d17-aac4-8612c07f3166"
+            resValue "string", "playstore_url", "https://play.google.com/store/apps/details?id=%s"
+
+            resValue "string", "admob_app_id", "ca-app-pub-3940256099942544~3347511713"
+            resValue "string", "interstitial_id", "ca-app-pub-3940256099942544/1033173712"
+            resValue "string", "banner_id", "ca-app-pub-3940256099942544/6300978111"
+            resValue "string", "native_id", "ca-app-pub-3940256099942544/2247696110"
+            resValue "string", "app_open_id", "ca-app-pub-3940256099942544/9257395921"
+        }
+        release {
+            resValue "string", "onesignal_app_id", "620744f5-6a4f-4d17-aac4-8612c07f3166"
+            resValue "string", "playstore_url", "https://play.google.com/store/apps/details?id=%s"
+
+            //Test Ids
+            resValue "string", "admob_app_id", "ca-app-pub-3940256099942544~3347511713"
+            resValue "string", "interstitial_id", "ca-app-pub-3940256099942544/1033173712"
+            resValue "string", "banner_id", "ca-app-pub-3940256099942544/6300978111"
+            resValue "string", "native_id", "ca-app-pub-3940256099942544/2247696110"
+            resValue "string", "app_open_id", "ca-app-pub-3940256099942544/9257395921"
+
+//            resValue "string", "admob_app_id", "ca-app-pub-2954385602054263~1478469710"
+//            resValue "string", "interstitial_id", "ca-app-pub-2954385602054263/5254063190"
+//            resValue "string", "banner_id", "ca-app-pub-2954385602054263/5903077685"
+//            resValue "string", "native_id", "ca-app-pub-2954385602054263/1422629393"
+//            resValue "string", "app_open_id", "ca-app-pub-2954385602054263/9109547722"
+
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    buildFeatures {
+        dataBinding = true
+        viewBinding = true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+    implementation("androidx.activity:activity-ktx:1.7.2")
+    implementation("androidx.core:core-ktx:1.7.0")
+    implementation("androidx.appcompat:appcompat:1.6.1")
+    implementation("com.google.android.material:material:1.9.0")
+    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+    implementation project(path: ':expandableListview')
+    testImplementation("junit:junit:4.13.2")
+    androidTestImplementation("androidx.test.ext:junit:1.1.5")
+    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+
+    implementation("com.mikhaellopez:circularprogressbar:3.1.0")
+    implementation("com.airbnb.android:lottie:6.2.0")
+    implementation("androidx.multidex:multidex:2.0.1")
+
+    //Ads & Analytics
+    implementation("com.google.android.gms:play-services-ads:22.5.0")
+    implementation(platform("com.google.firebase:firebase-bom:32.7.0"))
+    implementation("com.google.firebase:firebase-analytics")
+    implementation("com.onesignal:OneSignal:[5.0.0, 5.99.99]")
+    implementation("com.google.android.ump:user-messaging-platform:2.1.0")
+
+    //Activity lifecycle
+    implementation("androidx.lifecycle:lifecycle-extensions:2.2.0")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
+    annotationProcessor("androidx.lifecycle:lifecycle-compiler:2.6.2")
+
+    //Navigation components
+    implementation("androidx.navigation:navigation-fragment-ktx:2.7.5")
+    implementation("androidx.navigation:navigation-ui-ktx:2.7.5")
+
+    //Room
+    def room_version = "2.4.3"
+    implementation("androidx.room:room-runtime:$room_version")
+    ksp("androidx.room:room-compiler:$room_version")
+    implementation("androidx.room:room-ktx:$room_version")
+
+    //glide
+    implementation("com.github.bumptech.glide:glide:4.14.2")
+    annotationProcessor("com.github.bumptech.glide:compiler:4.14.2")
+
+    //Shimmer
+    implementation("com.facebook.shimmer:shimmer:0.5.0")
+
+    implementation("com.google.guava:guava:32.1.2-android")
+    implementation(group: "commons-io", name: "commons-io", version: "2.6")
+}

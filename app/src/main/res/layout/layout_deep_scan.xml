@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/circle3"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:background="@drawable/bg_circle"
+        android:backgroundTint="@color/bg_scan_3"
+        app:layout_constraintBottom_toBottomOf="@id/btnDeepScan"
+        app:layout_constraintEnd_toEndOf="@id/btnDeepScan"
+        app:layout_constraintStart_toStartOf="@id/btnDeepScan"
+        app:layout_constraintTop_toTopOf="@id/btnDeepScan" />
+
+    <View
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:background="@drawable/bg_circle"
+        android:backgroundTint="@color/bg_scan_2"
+        app:layout_constraintBottom_toBottomOf="@id/btnDeepScan"
+        app:layout_constraintEnd_toEndOf="@id/btnDeepScan"
+        app:layout_constraintStart_toStartOf="@id/btnDeepScan"
+        app:layout_constraintTop_toTopOf="@id/btnDeepScan" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btnDeepScan"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:foreground="@drawable/ripple_bg_circle_transp_blackish"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45"
+        app:srcCompat="@drawable/ic_deep_scan" />
+
+    <TextView
+        android:id="@+id/tap_to_deep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text="@string/tap_to_deep_scan"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/circle3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

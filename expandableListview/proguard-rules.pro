@@ -1,0 +1,2 @@
+-keep class com.filerecover.photorecovery.models.** { *; }
+-keepnames class com.filerecover.photorecovery.models.** { *; }

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navHost"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.filerecover.photorecovery.allrecover.restore.ui.fragments.HomeFragment"
+        android:label="FragmentHome"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_home_to_storage_analyze"
+            app:destination="@+id/storageAnalyzeFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+
+        <action
+            android:id="@+id/action_home_to_image_recovery"
+            app:destination="@+id/imageRecoveryFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+
+        <action
+            android:id="@+id/action_home_to_doc_recovery"
+            app:destination="@+id/docRecoveryFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+
+        <action
+            android:id="@+id/action_home_to_settings"
+            app:destination="@+id/settingsFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/storageAnalyzeFragment"
+        android:name="com.filerecover.photorecovery.allrecover.restore.ui.fragments.StorageAnalyzeFragment"
+        android:label="FragmentStorageAnalyze"
+        tools:layout="@layout/fragment_storage_analyze">
+        <action
+            android:id="@+id/action_storage_analyze_to_junk"
+            app:destination="@+id/junkFilesFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+
+        <action
+            android:id="@+id/action_storage_analyze_to_home"
+            app:destination="@+id/homeFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/junkFilesFragment"
+        android:name="com.filerecover.photorecovery.allrecover.restore.ui.fragments.JunksFilesFragment"
+        android:label="FragmentJunkFiles"
+        tools:layout="@layout/fragment_junk_files">
+        <action
+            android:id="@+id/action_junk_to_storage_analyze"
+            app:destination="@+id/storageAnalyzeFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/imageRecoveryFragment"
+        android:name="com.filerecover.photorecovery.allrecover.restore.ui.fragments.MediaRecoveryFragment"
+        android:label="FragmentImageRecovery"
+        tools:layout="@layout/fragment_media_recovery">
+
+        <action
+            android:id="@+id/action_media_to_media_details"
+            app:destination="@+id/mediaDetailsFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/mediaDetailsFragment"
+        android:name="com.filerecover.photorecovery.allrecover.restore.ui.fragments.MediaDetailsFragment"
+        android:label="FragmentMediaDetails"
+        tools:layout="@layout/fragment_media_details" />
+
+    <fragment
+        android:id="@+id/docRecoveryFragment"
+        android:name="com.filerecover.photorecovery.allrecover.restore.ui.fragments.DocsRecoveryFragment"
+        android:label="FragmentDocRecovery"
+        tools:layout="@layout/fragment_doc_recovery">
+        <action
+            android:id="@+id/action_doc_recovery_to_home"
+            app:destination="@+id/homeFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.filerecover.photorecovery.allrecover.restore.ui.fragments.SettingsFragment"
+        android:label="FragmentSettings"
+        tools:layout="@layout/fragment_settings">
+        <action
+            android:id="@+id/action_settings_to_home"
+            app:destination="@+id/homeFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right" />
+
+        <action
+            android:id="@+id/action_settings_to_language"
+            app:destination="@+id/languageFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/languageFragment"
+        android:name="com.filerecover.photorecovery.allrecover.restore.ui.fragments.LanguageFragment"
+        android:label="FragmentSettings"
+        tools:layout="@layout/fragment_language">
+        <action
+            android:id="@+id/action_language_to_settings"
+            app:destination="@+id/settingsFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right" />
+    </fragment>
+</navigation>

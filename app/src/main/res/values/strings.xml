@@ -1,0 +1,133 @@
+<resources>
+    <string name="app_name" translatable="false">Photo Retriever</string>
+
+    <string name="privacy_policy_link" translatable="false"><![CDATA[https://www.privacypolicycenter.com/view.php?v=UW40Y0NmVDNFZ0FSWllOWGhZYnU1Zz09&n=Photo-Retriever]]></string>
+    <string name="terms_service_link" translatable="false"><![CDATA[https://www.privacypolicycenter.com/view_custom.php?v=eWQ0WkNyZzVCTXU3cWdEcGpEb25ZQT09&n=Terms-of-Service]]></string>
+    <string name="policy_check_text" translatable="false">By checking the box you agree to our <u>Privacy Policy</u> and <u>Terms of Service</u> .</string>
+    <string name="bottom_text1" translatable="false">By checking the box you agree to our</string>
+    <string name="bottom_text2" translatable="false"><u>Privacy Policy</u></string>
+    <string name="bottom_text3" translatable="false">and</string>
+    <string name="bottom_text4" translatable="false"><u>Terms of Service</u></string>
+    <string name="bottom_text5" translatable="false">.</string>
+
+    <string name="recover_data" translatable="false">Recover Data</string>
+    <string name="image_recovery">Image Recovery</string>
+    <string name="video_recovery">Video Recovery</string>
+    <string name="audio_recovery">Audio Recovery</string>
+    <string name="document_recovery">Document Recovery</string>
+    <string name="today">Today</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="tap_to_deep_scan">\'Tap\' to Deep Scan</string>
+    <string name="scanning">Scanning...</string>
+    <string name="open_with">Open with</string>
+    <string name="restore">Restore</string>
+    <string name="share">Share</string>
+    <string name="delete_permanent">Delete permanent</string>
+    <string name="details">Details</string>
+    <string name="file_name_">File Name:</string>
+    <string name="file_path_">File Path:</string>
+    <string name="file_size_">File Size:</string>
+    <string name="file_type_">File Type:</string>
+    <string name="file_created_">File Created:</string>
+    <string name="ok">Ok</string>
+    <string name="share_using">Share using</string>
+    <string name="delete_file_">Delete File?</string>
+    <string name="delete_file_desc">This file will be permanently\ndeleted from this device.</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="analyze_storage">Analyze storage</string>
+    <string name="storage">Storage</string>
+    <string name="images">Images</string>
+    <string name="documents">Documents</string>
+    <string name="apps">Apps</string>
+    <string name="system">System</string>
+    <string name="other">Other</string>
+    <string name="audio">Audio</string>
+    <string name="get_started" translatable="false">Get Started</string>
+    <string name="title_privacy_policy">Privacy Policy</string>
+    <string name="title_terms_service">Terms of Service</string>
+    <string name="recover_deleted_files_for_free" translatable="false">Recover deleted files for free</string>
+    <string name="click_checkbox_toast" translatable="false">You must accept the terms and conditions.</string>
+
+    <string name="language">Language</string>
+    <string name="english" translatable="false">English</string>
+    <string name="spanish" translatable="false">Español</string>
+    <string name="hindi" translatable="false">हिंदी</string>
+    <string name="french" translatable="false">Françias</string>
+    <string name="chinese" translatable="false">中国人</string>
+    <string name="arabic" translatable="false">عربي</string>
+    <string name="russian" translatable="false">Русский</string>
+    <string name="portuguese" translatable="false">Português</string>
+    <string name="italian" translatable="false">Italiano</string>
+    <string name="bengali" translatable="false">বাংলা</string>
+    <string name="german" translatable="false">Deutsch</string>
+    <string name="japanese" translatable="false">日本語</string>
+    <string name="urdu" translatable="false">اردو</string>
+    <string name="persian" translatable="false">فارسی</string>
+    <string name="malaysian" translatable="false">Malaysia</string>
+
+    <string name="settings">Settings</string>
+    <string name="upgrade_to_premium">Upgrade to Premium</string>
+    <string name="get_premium_desc">Get premium to unlock features</string>
+    <string name="know_more">Know More</string>
+    <string name="share_app">Share app</string>
+    <string name="rate_us">Rate us</string>
+    <string name="privacy_policy">Privacy policy</string>
+    <string name="terms_of_use">Terms of use</string>
+    <string name="version_">Version %s</string>
+    <string name="deleted_selected_files">Deleted selected files.</string>
+    <string name="all_files_have_been_scanned">All files have been scanned</string>
+    <string name="photos">Photos</string>
+    <string name="videos">Videos</string>
+    <string name="recover_deleted_photo">Recover deleted photo</string>
+    <string name="recover_deleted_video">Recover deleted video</string>
+    <string name="recover_deleted_music">Recover deleted music</string>
+    <string name="recover_deleted_document">Recover deleted document</string>
+    <string name="reycle_bin">Reycle Bin</string>
+    <string name="save_everything_you_delete">Save everything you delete</string>
+    <string name="no_files">No files</string>
+    <string name="junk_files">Junk Files</string>
+    <string name="cache_files">Cache files</string>
+    <string name="clean">Clean</string>
+    <string name="clean_up">Clean up</string>
+    <string name="restored_selected_files">Restored selected files.</string>
+    <string name="restore_file_">Restore File?</string>
+    <string name="restore_file_desc">This file will be restored.</string>
+    <string name="restored">Restored</string>
+    <string name="restoring_">Restoring...</string>
+    <string name="available_internal_storage">Available Internal Storage</string>
+    <string name="view_details">View Details</string>
+    <string name="_of_space_used">%s of %s used</string>
+    <string name="file_name">File name</string>
+    <string name="s_photos">%s Photos</string>
+    <string name="s_videos">%s Videos</string>
+    <string name="s_audio">%s Audio</string>
+    <string name="s_documents">%s Documents</string>
+    <string name="stop_scanning_">Stop Scanning?</string>
+    <string name="stop">Stop</string>
+
+    <string name="allow_permission">Allow permission</string>
+    <string name="all_files_access">All Files Access</string>
+    <string name="you_need_to_give_all_files_access">You need to give this app All files access permission to Manage &amp; Recover deleted files</string>
+    <string name="you_need_to_give_usage_access">You need to give this app Usage Access permission to work it properly</string>
+    <string name="permissions_required">Permissions Required</string>
+    <string name="you_need_to_give_some_required_permissions_to_run_this_app_smoothly">You need to give some required permissions to\nrun this app smoothly.</string>
+    <string name="you_need_to_give_notification_permission_to_run_this_app_smoothly">You need to give this app notification permission to work it properly.</string>
+    <string name="storage_permission">Storage Permission</string>
+    <string name="you_need_to_give_storage_access">You need to give this app Storage permission to Manage &amp; Recover deleted files</string>
+    <string name="continue_">Continue</string>
+    <string name="restore_count">Restore (%d)</string>
+    <string name="exit_app">Exit App</string>
+    <string name="are_you_sure_want_to_exit">Are you sure want to exit?</string>
+    <string name="exit">Exit</string>
+    <string name="loading_ad">Loading Ad...</string>
+    <string name="light">Light</string>
+    <string name="dark">Dark</string>
+    <string name="done">Done</string>
+    <string name="agree_and_continue">Agree &amp; Continue</string>
+    <string name="_images_found">%d Images found</string>
+    <string name="_videos_found">%d Videos found</string>
+    <string name="_docs_found">%d Docs found</string>
+    <string name="_audios_found">%d Audios found</string>
+    <string name="_count_more">%s More</string>
+</resources>

@@ -1,0 +1,30 @@
+apply plugin: 'com.android.library'
+
+// Common configurations
+
+android {
+    namespace "com.h6ah4i.android.widget.advrecyclerview"
+    compileSdk 33
+
+    defaultConfig {
+        minSdk 15
+        targetSdk 33
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            shrinkResources false
+            consumerProguardFiles 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            shrinkResources false
+            consumerProguardFiles 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.recyclerview:recyclerview:1.3.1'
+}

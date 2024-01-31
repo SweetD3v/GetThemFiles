@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.filerecover.photorecovery.allrecover.restore.views.SquareFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foreground="@drawable/bg_top_gradient">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <ImageView
+            android:id="@+id/imgThumb1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:padding="1dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toTopOf="@id/glH"
+            app:layout_constraintEnd_toStartOf="@id/glV"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgPlay1"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/imgThumb1"
+            app:layout_constraintEnd_toEndOf="@id/imgThumb1"
+            app:layout_constraintStart_toStartOf="@id/imgThumb1"
+            app:layout_constraintTop_toTopOf="@id/imgThumb1"
+            app:srcCompat="@drawable/ic_play" />
+
+        <ImageView
+            android:id="@+id/imgThumb2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:padding="1dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toTopOf="@id/glH"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/glV"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgPlay2"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/imgPlay2"
+            app:layout_constraintEnd_toEndOf="@id/imgPlay2"
+            app:layout_constraintStart_toStartOf="@id/imgPlay2"
+            app:layout_constraintTop_toTopOf="@id/imgPlay2"
+            app:srcCompat="@drawable/ic_play" />
+
+        <ImageView
+            android:id="@+id/imgThumb3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:padding="1dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/glV"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/glH" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgPlay3"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/imgPlay3"
+            app:layout_constraintEnd_toEndOf="@id/imgPlay3"
+            app:layout_constraintStart_toStartOf="@id/imgPlay3"
+            app:layout_constraintTop_toTopOf="@id/imgPlay3"
+            app:srcCompat="@drawable/ic_play" />
+
+        <ImageView
+            android:id="@+id/imgThumb4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:padding="1dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/glV"
+            app:layout_constraintTop_toBottomOf="@id/glH" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgPlay4"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/imgThumb4"
+            app:layout_constraintEnd_toEndOf="@id/imgThumb4"
+            app:layout_constraintStart_toStartOf="@id/imgThumb4"
+            app:layout_constraintTop_toTopOf="@id/imgThumb4"
+            app:srcCompat="@drawable/ic_play" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/txtMoreCount"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_blackish_transp"
+        android:ellipsize="end"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:maxLines="2"
+        android:paddingHorizontal="8dp"
+        android:text="@string/_count_more"
+        android:textColor="@color/white_white"
+        android:textSize="14sp" />
+
+</com.filerecover.photorecovery.allrecover.restore.views.SquareFrameLayout>
